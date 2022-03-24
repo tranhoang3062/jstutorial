@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+</head>
+
+<script src=".\tdlist.js"></script>
+<style>
+  .container {
+    background-color: rgb(44, 160, 150);
+  }
+
+  .button {
+        position: relative;
+        width: 21px;
+        height: 21px;
+        padding: 0;
+        border: none;
+        background-color: hsla(166, 100%, 50%, 0.7);
+        cursor: pointer;
+        left: -4px;
+  }
+
+  .span {
+        color: #ffff;
+    }
+
+  .toDoList {
+      position: absolute;
+      text-align: left;
+      left: -22px;
+      list-style: circle;
+  }
+</style>
+<body class="container">
+    <div class="heading">
+      <h1>To-Do List</h1>
+    </div>
+
+    <form class="form">
+      <div>
+        <label class="form__label" for="todo"></label>
+        <input class="form__input" type="text" id="todo" size="30" placeholder="Enter a task">
+        <button class="button"><span style="color:#ffff">+</span></button>
+      </div>
+    </form>
+    <div>
+      <ul class="toDoList">
+        <span>Task1</span>
+      </ul>
+    </div>
+</body>
